@@ -1,3 +1,5 @@
+import Header from "@/components/layout/header";
+import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
@@ -6,9 +8,8 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Makje",
-  description:
-    "Welcome to Makje's portfolio - a showcase of innovative web development projects, technical skills, and a testament to a lifelong passion for coding. Dive in to explore my journey and expertise in the realm of web development.",
+  title: siteConfig.name,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({
@@ -17,9 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(GeistSans.variable, GeistMono.variable)}>
+    <html
+      lang="en"
+      className={cn(GeistSans.variable, GeistMono.variable)}
+      suppressHydrationWarning
+    >
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -25,6 +25,7 @@ export default function Header() {
       shouldHideOnScroll
       disableAnimation
       isBordered
+      maxWidth="xl"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{

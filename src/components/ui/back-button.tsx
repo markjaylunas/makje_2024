@@ -1,3 +1,5 @@
+"use client";
+
 import { Button, ButtonProps } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 

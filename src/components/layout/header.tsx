@@ -54,7 +54,10 @@ export default function Header() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+      <NavbarContent
+        className="hidden sm:flex gap-4 font-light text-sm"
+        justify="end"
+      >
         {routesConfig.mainNav.map((item, index) => (
           <NavbarItem
             key={`${item.title}-${index}`}

@@ -37,6 +37,16 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      layout: {
+        radius: {
+          small: "4px", // rounded-small
+          medium: "6px", // rounded-medium
+          large: "8px", // rounded-large
+        },
+      },
+    }),
+  ],
 };
 export default config;

@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
 import { Icons } from "../ui/icons";
 import ShinnyWrapper from "../ui/shiny-wrapper";
-import { Spotlight } from "./spotlight";
+import { Spotlight } from "../ui/spotlight";
 
 export default function HeroSection() {
   return (

@@ -6,14 +6,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <HeroSection />
 
-      <p className="text-blue-600 ">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-        delectus, quo beatae veniam, voluptatum assumenda sunt a reprehenderit
-        nam odit corrupti cupiditate harum. Beatae, itaque cumque possimus
-        placeat provident veritatis!
-      </p>
-
-      <Spacer y={60} />
+      <section className="h-48 w-full bg-gray-800 mt-12">Section 2</section>
+      <section className="h-48 w-full bg-gray-800 mt-12">Section 3</section>
+      <section className="h-48 w-full bg-gray-800 mt-12">Section 4</section>
+      <section className="h-48 w-full bg-gray-800 mt-12">Section 5</section>
     </main>
   );
 }

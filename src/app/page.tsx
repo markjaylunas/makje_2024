@@ -1,5 +1,4 @@
 import HeroSection from "@/components/hero/hero-section";
-import { Spacer } from "@nextui-org/react";
 
 export default function Home() {
   return (

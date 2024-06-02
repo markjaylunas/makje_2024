@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@nextui-org/react";
-import DotPattern from "../ui/dot-pattern";
 import GridPattern from "../ui/grid-pattern";
 import { Icons } from "../ui/icons";
 import ShinnyWrapper from "../ui/shiny-wrapper";

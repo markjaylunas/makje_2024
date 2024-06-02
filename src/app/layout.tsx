@@ -20,8 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(GeistSans.variable, GeistMono.variable)}
-      suppressHydrationWarning
+      className={cn(GeistSans.variable, GeistMono.variable, "dark")}
     >
       <body>
         <Providers>

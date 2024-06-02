@@ -1,12 +1,9 @@
 import HeroLogo from "@/components/hero/logo";
-import { ThemeSwitcher } from "@/components/ui/theme-switcher";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <HeroLogo />
-
-      <ThemeSwitcher />
 
       <p className="text-blue-600">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,

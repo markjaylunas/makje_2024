@@ -22,11 +22,11 @@ export default function HeroSection() {
         </h1>
 
         <p className="mt-4 font-normal text-pretty text-xl md:text-3xl text-neutral-300 max-w-lg text-center mx-auto">
-          Crafting a faster, personalized web with modern frontend technologies.
+          Building a faster, personalized web with modern frontend technologies.
         </p>
 
         <Button className="mt-12 md:mt-8 p-0 w-fit h-fit">
-          <ShinnyWrapper>Get in Touch</ShinnyWrapper>
+          <ShinnyWrapper>Let&apos;s Connect</ShinnyWrapper>
         </Button>
       </div>
     </section>

@@ -5,6 +5,7 @@ import GridPattern from "../ui/grid-pattern";
 import { Icons } from "../ui/icons";
 import ShinnyWrapper from "../ui/shiny-wrapper";
 import { Spotlight } from "../ui/spotlight";
+import SpotlightMotion from "./spotlight-motion";
 
 export default function HeroSection() {
   return (
@@ -34,15 +35,17 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <GridPattern
-        width={20}
-        height={20}
-        x={-1}
-        y={-1}
-        className={cn(
-          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
-        )}
-      />
+      <SpotlightMotion>
+        <GridPattern
+          width={20}
+          height={20}
+          x={-1}
+          y={-1}
+          className={cn(
+            "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]"
+          )}
+        />
+      </SpotlightMotion>
     </section>
   );
 }

@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 const { nextui } = require("@nextui-org/react");
+const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -34,6 +36,11 @@ const config: Config = {
           },
         },
       },
+      textShadow: {
+        sm: "0 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
+        lg: "0 8px 16px var(--tw-shadow-color)",
+      },
     },
   },
   darkMode: "class",
@@ -46,6 +53,16 @@ const config: Config = {
           large: "8px", // rounded-large
         },
       },
+    }),
+    plugin(function ({ matchUtilities, theme }: PluginAPI) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
     }),
   ],
 };

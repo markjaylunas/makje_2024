@@ -25,7 +25,7 @@ export default function HeroSection() {
     <section className="relative w-full">
       <Spotlight className="left-24 -top-10 md:left-44" fill="white" />
 
-      <ContentMotion className="relative z-10 h-[calc(100dvh-4rem)] px-8 md:px-24 flex flex-col items-center justify-center">
+      <ContentMotion className="relative z-10 h-[calc(100dvh-4rem)] w-max flex flex-col items-center justify-center mx-auto">
         <Icons.logo
           className="z-10 size-32 md:size-44 relative drop-shadow-[0_0_1rem_#ffffff70] "
           aria-label="Makje"
@@ -35,13 +35,11 @@ export default function HeroSection() {
           I&apos;m Makje. <br /> A web developer.
         </h1>
 
-        <p className="mt-4 px-0 font-normal text-pretty text-xl text-neutral-400 max-w-lg text-center drop-shadow-[0_0_1rem_#000000]">
-          Building
+        <p className="mt-4 px-0 font-normal text-pretty text-xl text-neutral-400 max-w-md text-center drop-shadow-[0_0_1rem_#000000]">
+          Building a web experience with modern technologies that is
           <span className="inline-block text-left w-32">
             <FlipWords words={words} />
           </span>
-          <br />
-          web with modern technologies.
         </p>
 
         <Button className="m-24 shadow-sm md:mt-8 p-0 w-fit h-fit">
@@ -49,6 +47,9 @@ export default function HeroSection() {
             Let&apos;s Connect
           </ShinnyWrapper>
         </Button>
+
+        <Icons.plus className="absolute h-6 w-6 top-10 left-0 text-white/50" />
+        <Icons.plus className="absolute h-6 w-6 bottom-10 right-0 text-white/50" />
       </ContentMotion>
 
       <SpotlightMotion>

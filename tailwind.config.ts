@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 import type { PluginAPI } from "tailwindcss/types/config";
 const { nextui } = require("@nextui-org/react");
-const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
   content: [
@@ -23,6 +22,7 @@ const config: Config = {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        shimmer: "shimmer 8s infinite",
       },
       keyframes: {
         spotlight: {
@@ -35,11 +35,14 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
-      },
-      textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
-        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
-        lg: "0 8px 16px var(--tw-shadow-color)",
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
       },
     },
   },
@@ -53,16 +56,6 @@ const config: Config = {
           large: "8px", // rounded-large
         },
       },
-    }),
-    plugin(function ({ matchUtilities, theme }: PluginAPI) {
-      matchUtilities(
-        {
-          "text-shadow": (value) => ({
-            textShadow: value,
-          }),
-        },
-        { values: theme("textShadow") }
-      );
     }),
   ],
 };

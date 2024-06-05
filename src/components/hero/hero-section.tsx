@@ -25,7 +25,7 @@ export default function HeroSection() {
     <section className="relative w-full">
       <Spotlight className="left-24 -top-10 md:left-44" fill="white" />
 
-      <ContentMotion className="relative z-10 px-4 h-[calc(100dvh-4rem)]  flex flex-col items-center justify-center gap-6 mx-auto">
+      <ContentMotion className="relative z-10 px-8 h-[calc(100dvh-4rem)]  flex flex-col items-center justify-center gap-6 mx-auto">
         <Icons.logo
           className="z-10 size-32 md:size-44 relative drop-shadow-[0_0_1rem_#ffffff70] "
           aria-label="Makje"

@@ -16,12 +16,7 @@ export default async function NotFound() {
       </p>
 
       <div className="flex justify-center gap-4 ">
-        <BackButton
-          className="flex gap-1"
-          startContent={<Icons.arrowBack className="size-4" />}
-        >
-          Get back
-        </BackButton>
+        <BackButton>Get back</BackButton>
         <Link href="/">
           <Button
             color="primary"

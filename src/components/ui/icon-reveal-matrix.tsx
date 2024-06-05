@@ -22,6 +22,7 @@ export function IconRevealMatrix({
           containerClassName="bg-transparent"
           opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.8, 0.9, 1]}
           dotSize={2}
+          showGradient
         />
         <div className="absolute inset-0 [mask-image:radial-gradient(70px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" />
       </Card>

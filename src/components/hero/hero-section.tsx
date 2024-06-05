@@ -25,7 +25,7 @@ export default function HeroSection() {
     <section className="relative w-full">
       <Spotlight className="left-24 -top-10 md:left-44" fill="white" />
 
-      <ContentMotion className="relative z-10 h-[calc(100dvh-4rem)] w-max flex flex-col items-center justify-center mx-auto">
+      <ContentMotion className="relative z-10 px-4 h-[calc(100dvh-4rem)]  flex flex-col items-center justify-center gap-6 mx-auto">
         <Icons.logo
           className="z-10 size-32 md:size-44 relative drop-shadow-[0_0_1rem_#ffffff70] "
           aria-label="Makje"
@@ -35,21 +35,18 @@ export default function HeroSection() {
           I&apos;m Makje. <br /> A web developer.
         </h1>
 
-        <p className="mt-4 px-0 font-normal text-pretty text-xl text-neutral-400 max-w-md text-center drop-shadow-[0_0_1rem_#000000]">
+        <p className="px-0 text-neutral-500 font-normal text-pretty text-xl sm:text-2xl max-w-md text-center drop-shadow-[0_0_1rem_#000000]">
           Building a web experience with modern technologies that is
-          <span className="inline-block text-left w-32">
-            <FlipWords words={words} />
+          <span className="inline-block text-left min-w-36">
+            <FlipWords words={words.map((w) => w + ".")} />
           </span>
         </p>
 
-        <Button className="m-24 shadow-sm md:mt-8 p-0 w-fit h-fit">
-          <ShinnyWrapper className="text-2xl sm:text-xl">
+        <Button className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8">
+          <ShinnyWrapper className="text-xl w-full px-3 py-1">
             Let&apos;s Connect
           </ShinnyWrapper>
         </Button>
-
-        <Icons.plus className="absolute h-6 w-6 top-10 left-0 text-white/50" />
-        <Icons.plus className="absolute h-6 w-6 bottom-10 right-0 text-white/50" />
       </ContentMotion>
 
       <SpotlightMotion>
@@ -59,7 +56,7 @@ export default function HeroSection() {
           duration={2}
           repeatDelay={2}
           className={cn(
-            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+            "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)] sm:[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
             "inset-x-0 inset-y-[-50%] h-[200%] "
           )}
         />

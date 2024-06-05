@@ -31,7 +31,7 @@ export default function ShinnyWrapper({
           mass: 0.1,
         },
       }}
-      className="px-6 py-3 rounded-md relative radial-gradient h-full w-ful"
+      className="px-6 py-3 rounded-md relative radial-gradient h-full w-full"
     >
       <span
         className={cn(

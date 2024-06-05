@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      aspectRatio: {
+        "4/3": "4 / 3",
+      },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],

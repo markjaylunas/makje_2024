@@ -12,3 +12,8 @@ export type TechStack = {
   icon: IconKeys;
   colors: number[][];
 }[];
+
+export type MainTechStack = {
+  title: string;
+  icon: IconKeys;
+}[];

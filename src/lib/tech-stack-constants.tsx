@@ -27,18 +27,17 @@ export const techStackList: TechStack = [
     colors: [[62, 207, 142]],
   },
   {
-    title: "Node JS",
-    icon: "nodejs",
-    colors: [[140, 200, 75]],
-  },
-
-  {
     title: "Prisma",
     icon: "prisma",
     colors: [
       [255, 255, 255],
       [45, 55, 72],
     ],
+  },
+  {
+    title: "Tailwind CSS",
+    icon: "tailwindcss",
+    colors: [[6, 182, 212]],
   },
   {
     title: "Radix UI",
@@ -58,17 +57,15 @@ export const techStackList: TechStack = [
       [218, 97, 232],
     ],
   },
-
+  {
+    title: "Node JS",
+    icon: "nodejs",
+    colors: [[140, 200, 75]],
+  },
   {
     title: "Mantine",
     icon: "mantine",
     colors: [[51, 154, 240]],
-  },
-
-  {
-    title: "Tailwind CSS",
-    icon: "tailwindcss",
-    colors: [[6, 182, 212]],
   },
   {
     title: "Framer Motion",

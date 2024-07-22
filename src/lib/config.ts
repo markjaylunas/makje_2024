@@ -28,10 +28,6 @@ export const routesConfig: RoutesConfig = {
       href: "/works",
     },
     {
-      title: "Projects",
-      href: "/projects",
-    },
-    {
       title: "Contact",
       href: "/contact",
     },

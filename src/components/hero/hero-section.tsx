@@ -32,7 +32,7 @@ export default function HeroSection() {
         />
 
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-br from-neutral-50 to-neutral-400 bg-opacity-50">
-          I&apos;m Makje. <br /> A web developer.
+          Makje. <br /> The web developer.
         </h1>
 
         <p className="px-0 text-neutral-500 font-normal text-pretty text-xl sm:text-2xl max-w-md text-center drop-shadow-[0_0_1rem_#000000]">

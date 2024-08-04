@@ -16,7 +16,6 @@ type RoutesConfig = {
   mainNav: NavItem[];
 };
 
-// const navItems = ["Home", "About", "Work", "Projects", "Contact"];
 export const routesConfig: RoutesConfig = {
   mainNav: [
     {
@@ -24,14 +23,25 @@ export const routesConfig: RoutesConfig = {
       href: "/",
     },
     {
-      title: "Works",
-      href: "/works",
+      title: "Projects",
+      href: "/#projects", // todo: create projects page
     },
     {
       title: "Contact",
-      href: "/contact",
+      href: "/#contact", // todo: create contacts page
     },
   ],
 };
 
 export const API_BASE_URL = `${process.env.CONSUMET_API_BASE_URL}/meta/anilist`;
+
+export const PROJECTS_LINKS = {
+  myanime: {
+    website: "https://myanime.makje.com",
+    repo: "https://github.com/markjaylunas/myanime",
+  },
+  mathdojo: {
+    website: "https://mathdojo.makje.com",
+    repo: "https://github.com/markjaylunas/mathdojo",
+  },
+};

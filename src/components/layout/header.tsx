@@ -61,7 +61,11 @@ export default function Header() {
         {routesConfig.mainNav.map((item, index) => (
           <NavbarItem
             key={`${item.title}-${index}`}
-            isActive={item.href === pathname}
+            isActive={
+              // todo: add active page when all pages are implemented
+              // item.href === pathname
+              false
+            }
           >
             <Link color="foreground" href={item.href}>
               {item.title}

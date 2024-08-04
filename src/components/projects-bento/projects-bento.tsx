@@ -53,7 +53,7 @@ export default function ProjectsBento() {
         <Image
           unoptimized
           alt="My Anime screenshot"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-contain object-top"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
           src={IMG_MyAnime}
         />
         <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">

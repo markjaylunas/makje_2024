@@ -20,7 +20,8 @@ export default function ProjectsBento() {
         className="w-full col-span-12 sm:col-span-5 row-span-2"
       >
         <Image
-          alt="Relaxing app background"
+          unoptimized
+          alt="Mathdojo screenshot"
           className="z-0 w-full h-full object-cover"
           src={IMG_Mathdojo}
         />
@@ -50,7 +51,8 @@ export default function ProjectsBento() {
         className="w-full h-[300px] col-span-12 sm:col-span-7"
       >
         <Image
-          alt="Card example background"
+          unoptimized
+          alt="My Anime screenshot"
           className="z-0 w-full h-full scale-125 -translate-y-6 object-contain object-top"
           src={IMG_MyAnime}
         />

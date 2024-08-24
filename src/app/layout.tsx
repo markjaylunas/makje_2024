@@ -1,3 +1,4 @@
+import { Footer } from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import AnimatedShinyText from "@/components/ui/AnimatedShinyText";
 import { siteConfig } from "@/lib/config";
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

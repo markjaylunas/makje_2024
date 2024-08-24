@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@nextui-org/react";
+import NextLink from "next/link";
 import AnimatedGridPattern from "../ui/animated-grid-pattern";
 import { Icons } from "../ui/icons";
 import ShinnyWrapper from "../ui/shiny-wrapper";
@@ -26,7 +27,11 @@ export default function HeroSection() {
           Building a faster, personalized web with modern technologies.
         </p>
 
-        <Button className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8">
+        <Button
+          as={NextLink}
+          href="#footer"
+          className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8"
+        >
           <ShinnyWrapper className="text-xl w-full px-3 py-1">
             Let&apos;s Connect
           </ShinnyWrapper>

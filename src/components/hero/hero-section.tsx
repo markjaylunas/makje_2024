@@ -32,7 +32,7 @@ export default function HeroSection() {
           href="#footer"
           className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8"
         >
-          <ShinnyWrapper className="text-xl w-full px-3 py-1">
+          <ShinnyWrapper className="text-xl w-full px-3 py-1 text-center">
             Let&apos;s Connect
           </ShinnyWrapper>
         </Button>

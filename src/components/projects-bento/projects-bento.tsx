@@ -1,5 +1,5 @@
 import IMG_Mathdojo from "@/assets/mathdojo.png";
-import IMG_MyAnime from "@/assets/myanime.png";
+import IMG_Stream from "@/assets/stream.png";
 import { PROJECTS_LINKS } from "@/lib/config";
 import {
   Button,
@@ -14,7 +14,7 @@ import { Icons } from "../ui/icons";
 
 export default function ProjectsBento() {
   return (
-    <section className="mx-auto max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
+    <section className="mx-auto max-w-[900px] gap-4 grid grid-cols-12 grid-rows-2 px-8">
       <Card
         isFooterBlurred
         className="w-full col-span-12 sm:col-span-5 row-span-2"
@@ -34,45 +34,14 @@ export default function ProjectsBento() {
               </p>
             </div>
           </div>
-          <Button
-            as={NextLink}
-            target="_blank"
-            href={PROJECTS_LINKS.mathdojo.website}
-            radius="full"
-            size="sm"
-          >
-            Play Now
-          </Button>
-        </CardFooter>
-      </Card>
-
-      <Card
-        isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-7"
-      >
-        <Image
-          unoptimized
-          alt="My Anime screenshot"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-          src={IMG_MyAnime}
-        />
-        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-          <div>
-            <p className="text-black text-tiny">
-              My Anime is a streaming web app.
-            </p>
-            <p className="text-black text-tiny">
-              Discover new and old anime here.
-            </p>
-          </div>
 
           <ButtonGroup>
             <Button
               as={NextLink}
               target="_blank"
-              href={PROJECTS_LINKS.myanime.repo}
+              href={PROJECTS_LINKS.mathdojo.repo}
               className="text-tiny"
-              color="secondary"
+              color="default"
               radius="full"
               size="sm"
               startContent={<Icons.code />}
@@ -83,9 +52,55 @@ export default function ProjectsBento() {
             <Button
               as={NextLink}
               target="_blank"
-              href={PROJECTS_LINKS.myanime.website}
+              href={PROJECTS_LINKS.mathdojo.website}
+              radius="full"
+              size="sm"
+              color="secondary"
+            >
+              Play Now
+            </Button>
+          </ButtonGroup>
+        </CardFooter>
+      </Card>
+
+      <Card
+        isFooterBlurred
+        className="w-full h-[300px] col-span-12 sm:col-span-7"
+      >
+        <Image
+          unoptimized
+          alt="Stream screenshot"
+          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+          src={IMG_Stream}
+        />
+        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+          <div>
+            <p className="text-black text-tiny px-2">
+              A streaming web app, discover anime, movies, k-drama, and manga
+              here.
+            </p>
+          </div>
+
+          <ButtonGroup>
+            <Button
+              as={NextLink}
+              target="_blank"
+              href={PROJECTS_LINKS.stream.repo}
               className="text-tiny"
-              color="primary"
+              color="default"
+              radius="full"
+              size="sm"
+              startContent={<Icons.code />}
+              variant="shadow"
+            >
+              Code
+            </Button>
+            <Button
+              as={NextLink}
+              target="_blank"
+              href={PROJECTS_LINKS.stream.website}
+              className="text-tiny"
+              color="secondary"
               radius="full"
               size="sm"
               variant="shadow"
@@ -107,7 +122,13 @@ export default function ProjectsBento() {
           </h4>
         </CardHeader>
 
-        <Button as={NextLink} href="/projects" color="secondary" size="lg">
+        <Button
+          isDisabled
+          as={NextLink}
+          href="/projects"
+          color="secondary"
+          size="lg"
+        >
           View All Projects
         </Button>
       </Card>

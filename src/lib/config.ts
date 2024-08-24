@@ -33,12 +33,10 @@ export const routesConfig: RoutesConfig = {
   ],
 };
 
-export const API_BASE_URL = `${process.env.CONSUMET_API_BASE_URL}/meta/anilist`;
-
 export const PROJECTS_LINKS = {
-  myanime: {
-    website: "https://myanime.makje.com",
-    repo: "https://github.com/markjaylunas/myanime",
+  stream: {
+    website: "https://stream.makje.com",
+    repo: "https://github.com/markjaylunas/stream-makje",
   },
   mathdojo: {
     website: "https://mathdojo.makje.com",

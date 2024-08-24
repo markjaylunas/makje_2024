@@ -1,7 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@nextui-org/react";
 import AnimatedGridPattern from "../ui/animated-grid-pattern";
-import { FlipWords } from "../ui/flip-words";
 import { Icons } from "../ui/icons";
 import ShinnyWrapper from "../ui/shiny-wrapper";
 import { Spotlight } from "../ui/spotlight";
@@ -9,18 +8,6 @@ import ContentMotion from "./content-motion";
 import SpotlightMotion from "./spotlight-motion";
 
 export default function HeroSection() {
-  const words = [
-    "responsive",
-    "fast",
-    "dynamic",
-    "interactive",
-    "modern",
-    "scalable",
-    "efficient",
-    "robust",
-    "intuitive",
-    "innovative",
-  ].sort((a, b) => b.length - a.length);
   return (
     <section className="relative w-full">
       <Spotlight className="left-24 -top-10 md:left-44" fill="white" />
@@ -36,10 +23,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="px-0 text-neutral-500 font-normal text-pretty text-xl sm:text-2xl max-w-md text-center drop-shadow-[0_0_1rem_#000000]">
-          Building a web experience with modern technologies that is
-          <span className="inline-block text-left min-w-36">
-            <FlipWords words={words.map((w) => w + ".")} />
-          </span>
+          Building a faster, personalized web with modern technologies.
         </p>
 
         <Button className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8">

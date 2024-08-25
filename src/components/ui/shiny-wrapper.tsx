@@ -7,9 +7,11 @@ import { ReactNode } from "react";
 export default function ShinnyWrapper({
   children,
   className = "",
+  repeatDelay = 1,
 }: {
   children: ReactNode;
   className?: string;
+  repeatDelay?: number;
 }) {
   return (
     <motion.div
@@ -19,7 +21,7 @@ export default function ShinnyWrapper({
       transition={{
         repeat: Infinity,
         repeatType: "loop",
-        repeatDelay: 1,
+        repeatDelay: repeatDelay,
         type: "spring",
         stiffness: 20,
         damping: 15,

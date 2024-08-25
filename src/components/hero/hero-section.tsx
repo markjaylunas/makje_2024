@@ -1,5 +1,6 @@
+import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
-import { Button } from "@nextui-org/react";
+import { Button, Tooltip } from "@nextui-org/react";
 import NextLink from "next/link";
 import AnimatedGridPattern from "../ui/animated-grid-pattern";
 import { Icons } from "../ui/icons";
@@ -27,15 +28,72 @@ export default function HeroSection() {
           Building a faster, personalized web with modern technologies.
         </p>
 
-        <Button
-          as={NextLink}
-          href="#footer"
-          className="shadow-sm w-full sm:w-fit p-0 h-fit mt-8"
-        >
-          <ShinnyWrapper className="text-xl w-full px-3 py-1 text-center">
-            Let&apos;s Connect
-          </ShinnyWrapper>
-        </Button>
+        <section className="flex flex-col sm:flex-row gap-6 sm:gap-12 mt-8">
+          <Tooltip
+            delay={500}
+            showArrow={true}
+            content={siteConfig.links.github}
+          >
+            <Button
+              as={NextLink}
+              href={siteConfig.links.github}
+              target="_blank"
+              variant="light"
+              size="md"
+              className="shadow-sm w-full sm:w-fit p-0 h-fit"
+            >
+              <ShinnyWrapper className="text-lg w-full px-1 text-center flex justify-center items-center gap-2">
+                <Icons.github className="size-6" />
+                Github
+              </ShinnyWrapper>
+            </Button>
+          </Tooltip>
+
+          <Tooltip
+            delay={500}
+            showArrow={true}
+            content={siteConfig.links.linkedIn}
+          >
+            <Button
+              as={NextLink}
+              href={siteConfig.links.linkedIn}
+              target="_blank"
+              variant="light"
+              size="md"
+              className="shadow-sm w-full sm:w-fit p-0 h-fit"
+            >
+              <ShinnyWrapper
+                repeatDelay={1.5}
+                className="text-lg w-full px-1 text-center flex justify-center items-center gap-2"
+              >
+                <Icons.linkedIn className="size-6" />
+                LinkedIn
+              </ShinnyWrapper>
+            </Button>
+          </Tooltip>
+          <Tooltip
+            delay={500}
+            showArrow={true}
+            content={siteConfig.links.email}
+          >
+            <Button
+              as={NextLink}
+              href={siteConfig.links.email}
+              target="_blank"
+              variant="light"
+              size="md"
+              className="shadow-sm w-full sm:w-fit p-0 h-fit"
+            >
+              <ShinnyWrapper
+                repeatDelay={2}
+                className="text-lg w-full px-1 text-center flex justify-center items-center gap-2"
+              >
+                <Icons.email className="size-6" />
+                Email
+              </ShinnyWrapper>
+            </Button>
+          </Tooltip>
+        </section>
       </ContentMotion>
 
       <SpotlightMotion>

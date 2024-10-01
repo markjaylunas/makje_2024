@@ -10,10 +10,6 @@ export type NavItem = {
 export type TechStack = {
   title: string;
   icon: IconKeys;
+  href: string;
   colors: number[][];
-}[];
-
-export type MainTechStack = {
-  title: string;
-  icon: IconKeys;
 }[];

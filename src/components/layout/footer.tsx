@@ -9,7 +9,7 @@ export function Footer() {
       id="footer"
       className="border-t border-default-100 py-6 md:px-8 md:py-0"
     >
-      <div className="container flex flex-col items-center justify-center gap-4 space-y-4 py-8">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-4 space-y-4 py-8">
         <section className="flex flex-col sm:flex-row gap-6 sm:gap-12">
           <Button
             as={NextLink}

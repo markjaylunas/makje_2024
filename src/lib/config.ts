@@ -1,7 +1,7 @@
 import { NavItem } from "./types";
 
 export const siteConfig = {
-  name: "Makje",
+  name: "Makje | Mark Jay Lunas",
   url: "https://www.makje.com",
   description:
     "Makje's portfolio: Your gateway to cutting-edge web development. Explore a collection of projects demonstrating technical expertise and a commitment to crafting exceptional digital experiences.",

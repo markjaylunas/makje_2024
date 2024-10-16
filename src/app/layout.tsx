@@ -11,7 +11,7 @@ import { Providers } from "./providers";
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
-  metadataBase: new URL("https://www.makje.com/"),
+  metadataBase: new URL(siteConfig.url),
 };
 
 export default function RootLayout({

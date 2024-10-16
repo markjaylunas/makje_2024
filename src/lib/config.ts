@@ -4,7 +4,7 @@ export const siteConfig = {
   name: "Makje",
   url: "https://www.makje.com",
   description:
-    "Welcome to Makje's portfolio - a showcase of innovative web development projects, technical skills, and a testament to a lifelong passion for coding. Dive in to explore my journey and expertise in the realm of web development.",
+    "Makje's portfolio: Your gateway to cutting-edge web development. Explore a collection of projects demonstrating technical expertise and a commitment to crafting exceptional digital experiences.",
   links: {
     github: "https://github.com/markjaylunas",
     linkedIn: "https://www.linkedin.com/in/markjaylunas",

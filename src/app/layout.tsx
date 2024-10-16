@@ -1,6 +1,5 @@
 import { Footer } from "@/components/layout/footer";
 import Header from "@/components/layout/header";
-import AnimatedShinyText from "@/components/ui/AnimatedShinyText";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { GeistMono } from "geist/font/mono";
@@ -12,6 +11,7 @@ import { Providers } from "./providers";
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
+  metadataBase: new URL("https://www.makje.com/"),
 };
 
 export default function RootLayout({
